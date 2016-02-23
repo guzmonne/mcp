@@ -1,3 +1,4 @@
+var path = require('path')
 var getConfig = require('hjs-webpack')
 
 var config = getConfig({
@@ -10,13 +11,5 @@ var config = getConfig({
 	},
 	urlLoaderLimit: 10000
 })
-
-console.log(config.module.loaders.filter(
-	function(l){
-		console.log(l.loader);
-		return false;
-		//return l.loader.includes('sass')
-	})
-)
 
 module.exports = config;
