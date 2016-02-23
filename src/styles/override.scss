@@ -2,4 +2,34 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+// HELPERS
+.inner {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+// BACKGROUNDS
+.supermarket-1 {
+	background-image: url('./images/supermarket-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: auto;
+}
+// BUTTONS
+.btn-red {
+	color: #fff;
+	background-color: $red;
+	
+	&:hover {
+		background-color: $darkRed;
+	}
+}
+// INPUTS
+.input-lg {
+	height: 55px;
 }

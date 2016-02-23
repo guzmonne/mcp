@@ -1,16 +1,16 @@
 import React from 'react'
 import {Link} from 'react-router'
-import SplashContainer from '../components/splash/container.splash.js'
+import Container from '../components/helpers/container.helper.js'
 import SplashHeroUnit from '../components/splash/hero_unit.splash.js'
-import SplashForm from '../components/splash/form.splash.js'
 import RowColXS12 from '../components/bootstrap/row.col-xs-12.js'
+import TataLogoContour from '../components/helpers/tata_logo_contour.helper.js'
 
 export default class Splash extends React.Component {
 	render(){
 		return (
-			<SplashContainer>
+			<Container className="Splash">
 				<RowColXS12>
-					<img className="Splash__logo img-responsive" src="./images/tata_logo_contour.png" alt="Tata Logo Contour"/>
+					<TataLogoContour className="Splash__logo"/>
 				</RowColXS12>
 				
 				<RowColXS12>
@@ -25,15 +25,15 @@ export default class Splash extends React.Component {
 				</RowColXS12>
 
 				<div className="row Splash__buttons">
-					<Link to="login" className="btn Splash__button">
+					<Link to="login" className="btn btn-red Splash__button">
 						Iniciar Sesión
 					</Link>
-					<Link to="signup" className="btn Splash__button">
+					<Link to="signup" className="btn btn-red Splash__button">
 						Crear Cuenta
 					</Link>
 				</div>
 
-			</SplashContainer>
+			</Container>
 		)
 	}
 } 

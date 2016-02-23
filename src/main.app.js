@@ -20,6 +20,7 @@ export default class MainApp extends Component {
 			<Router history={browserHistory}>
 				<Route path="/" component={MainLayout}>
 					<IndexRoute component={Login}></IndexRoute>
+					<Route path="login" component={Login}></Route>
 					<Route path="splash" component={Splash}></Route>
 				</Route>
 			</Router>

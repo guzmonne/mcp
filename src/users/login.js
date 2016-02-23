@@ -1,19 +1,21 @@
 import React from 'react'
+import Container from '../components/helpers/container.helper.js'
+import LoginForm from '../components/login/form.login.js'
+import RowColXS12 from '../components/bootstrap/row.col-xs-12.js'
+import TataLogoContour from '../components/helpers/tata_logo_contour.helper.js'
 
-export default () => 
-	<div className="inner supermarket-1">
-		<div className="container">
+export default class Login extends React.Component {
+	render(){
+		return (
+			<Container className="Login">
+				<RowColXS12>
+					<TataLogoContour className="Login__logo"/>
+				</RowColXS12>
 
-			<form className="form-horizontal">
-				<legend>Iniciar Sesión</legend>
-
-				<div className="form-group">
-					<input type="text" placeholder="Usuario"/>
-					<button className="btn btn-block btn-primary">
-						Something
-					</button>
-				</div>
-			</form>
-
-		</div>
-	</div>
+				<RowColXS12>
+					<LoginForm />
+				</RowColXS12>
+			</Container>
+		)
+	}
+}
