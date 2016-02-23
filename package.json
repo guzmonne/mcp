@@ -1,0 +1,52 @@
+{
+  "name": "mcp",
+  "version": "1.0.0",
+  "description": "Meraki Captive Portal Content Manager",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "hjs-dev-server",
+    "build": "webpack",
+    "deploy": "npm run build && surge -p public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guzmonne/mcp.git"
+  },
+  "keywords": [
+    "Meraki",
+    "React",
+    "Authentication"
+  ],
+  "author": "Guzman Monne <gmonne@conatel.com.uy>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guzmonne/mcp/issues"
+  },
+  "homepage": "https://github.com/guzmonne/mcp#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "babel-loader": "^6.2.3",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.0",
+    "css-loader": "^0.23.1",
+    "json-loader": "^0.5.4",
+    "postcss-loader": "^0.8.1",
+    "react": "^0.14.7",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7"
+  },
+  "dependencies": {
+    "file-loader": "^0.8.5",
+    "hjs-webpack": "^7.2.1",
+    "node-sass": "^3.4.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0",
+    "rx": "^4.0.8",
+    "rx-dom": "^7.0.3",
+    "webpack": "^2.1.0-beta.2"
+  }
+}

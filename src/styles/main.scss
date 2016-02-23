@@ -1,0 +1,43 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import './variables.scss';
+@import './bootstrap.darkly.scss';
+@import './inner.scss';
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+ 	box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0;
+	font-size: 62.5%;
+	height: 100%;
+	overflow: hidden;
+
+	@media (max-width: 768px){
+		font-size: 50%;
+	}
+}
+
+svg {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	overflow: visible;
+}
+
+.svg-icon {
+	cursor: pointer;
+
+	path {
+		stroke: rgba(255,255,255,0.9);
+		fill: none;
+		stroke-width: 1;
+	}
+}
+
+input, button {
+	outline: none;
+	border: none;
+}
