@@ -1,4 +1,4 @@
-require('./styles/css/bootstrap.flatly.css');
+//require('./styles/css/bootstrap.flatly.css');
 require('./styles/main.scss');
 
 import MainApp from './main.app.js'

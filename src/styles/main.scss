@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import './css/bootstrap.flatly.css';
+@import './override.scss';
 @import './variables.scss';
 @import './inner.scss';
-
-body {
-	font-family: 'Open Sans', sans-serif;
-}
+@import './splash.scss';
