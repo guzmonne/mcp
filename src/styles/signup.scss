@@ -1,0 +1,35 @@
+.Signup {
+	.Signup__form {
+		padding-top: 30px;
+
+		.control-label {
+			display: none;
+		}
+	}
+
+	img {
+		margin: 0 auto;
+	}
+
+	input[type="radio"]{
+		transform: scale(2, 2)
+	}
+
+	label {
+		font-size: 19px;
+		line-height: 1.33333;
+		padding-left: 40px;
+		padding-bottom: 10px;
+		text-align: left;
+		margin-left: 50px;
+
+		input[type="radio"] {
+			margin-left: -25px;
+			margin-top: 5px;
+		}
+	}
+
+	.radio {
+		text-align: left;
+	}
+}

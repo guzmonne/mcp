@@ -24,23 +24,33 @@ export default class LoginForm extends React.Component {
 		return (
 			<div 
 				onSubmit={this.onSubmit}
-				className="Login__form_column col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-				<form className="Login__form">
+				className="Signup__form_column col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+				<form className="Signup__form">
 					<div className="row clearfix">
+						<DivisibleInput 
+							label="Nombre"
+							large/>
 						<DivisibleInput 
 							label="Email"
 							type="email"
 							large/>
 						<DivisibleInput 
-							label="Contraseña"
-							type="password"
+							label="Fecha de Nacimiento"
+							type="date"
 							large/>
+						<DivisibleInput 
+							label="Telefono"
+							type="text"
+							large/>
+						<div className="col-xs-12 col-sm-6 col-md-6">
+							<Radios name="gender" options={genderRadioOptions} />
+						</div>
 					</div>
 					<p>
 						<button 
 							name="submit"
 							type="submit"
-							className="Login__submit btn-red btn btn-block">
+							className="Signup__submit btn-red btn btn-block">
 							Aceptar
 						</button>
 					</p>

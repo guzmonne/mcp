@@ -8,7 +8,7 @@ export default class Login extends React.Component {
 	render(){
 		return (
 			<Container className="Login">
-				<RowColXS12>
+				<RowColXS12 className="text-center">
 					<TataLogoContour className="Login__logo"/>
 				</RowColXS12>
 

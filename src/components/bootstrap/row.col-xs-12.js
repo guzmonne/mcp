@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default ({children}) =>
-	<div className="row">
+export default ({children, className}) =>
+	<div className={`row ${className}`}>
 
 		<div className="col-xs-12">
 
