@@ -34,6 +34,9 @@ export default class Splash extends React.Component {
 					<Link to="poll" className="btn btn-red Splash__button">
 						Encuesta
 					</Link>
+					<Link to="advertisment" className="btn btn-red Splash__button">
+						Aviso
+					</Link>
 				</div>
 
 			</div>
