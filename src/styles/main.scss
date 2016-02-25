@@ -1,6 +1,10 @@
 @import './css/bootstrap.flatly.css';
 @import './variables.scss';
 @import './override.scss';
+// HELPERS
+@import './inputs.scss';
+// COMPONENTS
 @import './container.scss';
+// PAGES
 @import './splash.scss';
 @import './login.scss';

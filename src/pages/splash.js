@@ -4,6 +4,7 @@ import Container from '../components/helpers/container.helper.js'
 import SplashHeroUnit from '../components/splash/hero_unit.splash.js'
 import RowColXS12 from '../components/bootstrap/row.col-xs-12.js'
 import TataLogoContour from '../components/helpers/tata_logo_contour.helper.js'
+import TataLogoFill from '../components/helpers/tata_logo_fill.helper.js'
 
 export default class Splash extends React.Component {
 	render(){
