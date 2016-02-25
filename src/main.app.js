@@ -3,6 +3,7 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import Signup from './pages/signup.js'
 import Login from './pages/login.js'
 import Splash from './pages/splash.js'
+import Poll from './pages/poll.js'
 import MainLayout from './layouts/main.layout.js'
 
 const routeConfig = {
@@ -24,6 +25,7 @@ export default class MainApp extends Component {
 					<Route path="login" component={Login}></Route>
 					<Route path="signup" component={Signup}></Route>
 					<Route path="splash" component={Splash}></Route>
+					<Route path="poll" component={Poll}></Route>
 				</Route>
 			</Router>
 		)

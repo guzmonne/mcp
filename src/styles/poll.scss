@@ -1,0 +1,26 @@
+.Poll {
+	.img-responsive {
+		max-height: 200px;
+		margin: 0 auto;
+		opacity: 0.9;
+		transition: all 0.5s;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+
+	h2 {
+		margin: 0;
+		line-height: 1.5
+	}
+
+	hr {
+		border: 1px dashed #fff
+	}
+
+	small {
+		margin-top: 20px;
+		display: block;
+	}
+}
