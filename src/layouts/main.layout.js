@@ -1,4 +1,5 @@
 import React from 'react'
+import Container from '../components/helpers/container.helper.js'
 
 export default class MainLayout extends React.Component {
 	constructor(props){
@@ -8,7 +9,9 @@ export default class MainLayout extends React.Component {
 	render(){
 		return (
 			<div className="outer">
-				{this.props.children}
+				<Container className="App">
+					{this.props.children}
+				</Container>
 			</div>
 		)
 	}

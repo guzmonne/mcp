@@ -12,4 +12,16 @@
 			margin-left: 30px;
 		}
 	}
+	
+}
+@media (min-width: 768px) {
+	.Splash {
+		.Splash__button {
+			margin-left: 30px;
+
+			&:nth-of-type(1){
+				margin-left: 0px;
+			}
+		}
+	}	
 }

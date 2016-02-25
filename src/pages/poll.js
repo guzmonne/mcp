@@ -1,11 +1,10 @@
 import React from 'react'
-import Container from '../components/helpers/container.helper.js'
 import RowColXS12 from '../components/bootstrap/row.col-xs-12.js'
 
 export default class Poll extends React.Component {
 	render(){
 		return (
-		<Container className="Poll">
+		<div className="Poll">
 
 			<h1>
 				<strong>
@@ -29,7 +28,7 @@ export default class Poll extends React.Component {
 			</RowColXS12>
 
 			<small>Elija una de las opciones para continuar hacia Internet</small>
-		</Container>
+		</div>
 		)
 	}
 }
