@@ -1,9 +1,29 @@
 .Login {
 	.Login__form {
-		padding-top: 30px;
+		padding-top: 10px;
 
 		.control-label {
 			display: none;
+		}
+	}
+
+	.Login__social {
+		margin-top: 20px;
+		
+		.icon {
+			margin: 0 auto;
+			float: none;
+			display: inline-block;
+			margin-left: 15px;
+		}	
+	}
+
+	.Login__social_icon {
+		opacity: 0.7;
+		transition: all 0.5s;
+
+		&:hover {
+			opacity: 1;
 		}
 	}
 
