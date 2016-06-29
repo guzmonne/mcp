@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default ({className, children}) => 
-	<section className={"Container inner supermarket-1 " + className}>
+export default ({className="supermarket-1", children}) => 
+	<section className={"Container inner " + className}>
 
 		<div className="Container__hero">
 

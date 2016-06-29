@@ -6,6 +6,8 @@ body {
 	padding: 0;
 	border: none;
 }
+// root
+
 // HELPERS
 .inner {
 	position: absolute;
@@ -14,11 +16,17 @@ body {
 	margin: 0;
 }
 // BACKGROUNDS
-.supermarket-1 {
-	background-image: url('./images/supermarket-1.jpg');
+.App {
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: auto;
+	background-color: #00578A;
+}
+.tata {
+	background-image: url('./images/supermarket-1.jpg');
+}
+.mvd {
+	background-color: #EC7405;
 }
 // BUTTONS
 .btn-red {

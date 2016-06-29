@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "hjs-dev-server",
     "build": "webpack",
-    "deploy": "npm run build && surge -p public"
+    "deploy": "NODE_ENV=production npm run build && aws s3 cp --recursive /home/gmonne/Documents/Projects/mcp/public s3://cmx.conapps.click --region sa-east-1"
   },
   "repository": {
     "type": "git",
@@ -36,18 +36,19 @@
     "react": "^0.14.7",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
+    "file-loader": "^0.8.5",
+    "node-sass": "^3.4.2",
     "url-loader": "^0.5.7"
   },
   "dependencies": {
-    "file-loader": "^0.8.5",
     "font-awesome": "^4.5.0",
     "hjs-webpack": "^7.2.1",
-    "node-sass": "^3.4.2",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.0",
     "rx": "^4.0.8",
     "rx-dom": "^7.0.3",
+    "surge": "^0.17.7",
     "webpack": "^2.1.0-beta.2"
   }
 }

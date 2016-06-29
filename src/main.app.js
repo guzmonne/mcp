@@ -6,16 +6,8 @@ import Splash from './pages/splash.js'
 import Poll from './pages/poll.js'
 import Advertisment from './pages/advertisment.js'
 import MainLayout from './layouts/main.layout.js'
-
-const routeConfig = {
-	path: '/',
-	component: MainLayout,
-	indexRoute: {component: Login},
-	childRoutes: [
-		{path: 'login', component: Login},
-		{path: 'splash', component: Splash}
-	]
-}
+import Authorizing from './pages/authorizing.js'
+import Welcome from './pages/welcome.js'
 
 export default class MainApp extends Component {
 	render(){
@@ -28,6 +20,8 @@ export default class MainApp extends Component {
 					<Route path="splash" component={Splash}></Route>
 					<Route path="poll" component={Poll}></Route>
 					<Route path="advertisment" component={Advertisment}></Route>
+					<Route path="authorizing" component={Authorizing}></Route>
+					<Route path="welcome" component={Welcome}></Route>
 				</Route>
 			</Router>
 		)

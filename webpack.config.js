@@ -9,7 +9,13 @@ var config = getConfig({
 	output: {
 		hash: true
 	},
-	urlLoaderLimit: 10000
+	urlLoaderLimit: 10000,
+	html: function(context){
+		return {
+			'index.html': context.defaultTemplate(),
+			'200.html': context.defaultTemplate()
+		}
+	}
 })
 
 module.exports = config;

@@ -7,14 +7,15 @@ const social = {
 	linkedin: 'fa-linkedin'
 }
 
-const Social = ({icon="facebook", type=""}) =>
-	<div className={`icon ${icon} ${type}`}>
+const Social = ({icon="facebook", type="", onClick}) =>
+	<div onClick={onClick} className={`icon ${icon} ${type}`}>
 		<i className={`fa ${social[icon]}`}></i>
 	</div>
 
 Social.propTypes = {
 	icon: PropTypes.oneOf(Object.keys(social)),
-	type: PropTypes.oneOf(['', 'eclipse', 'rounded'])
+	type: PropTypes.oneOf(['', 'eclipse', 'rounded']),
+	onClick: PropTypes.func
 }
 
 export default Social
