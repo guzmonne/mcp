@@ -1,5 +1,6 @@
 var path = require('path')
 var getConfig = require('hjs-webpack')
+var webpack = require('webpack')
 
 var config = getConfig({
 	in: 'src/app.js',
@@ -17,5 +18,13 @@ var config = getConfig({
 		}
 	}
 })
+
+config.plugins || (config.plugins = [])
+
+config.plugins = config.plugins.concat([
+	
+])
+
+console.log(config)
 
 module.exports = config;

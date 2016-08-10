@@ -10,10 +10,6 @@ export default class Login extends React.Component {
 	componentWillMount(){
 		const token    = LocalStorage.getKey('token')
 		const provider = LocalStorage.getKey('provider')
-		if (!!token && !!provider) { // token is saved
-			console.log('Token found')
-			browserHistory.push(`/welcome?provider=${provider}&token=${token}`)
-		}
 	}
 
 	render(){
@@ -24,7 +20,7 @@ export default class Login extends React.Component {
 				</RowColXS12>
 
 				<RowColXS12 className="Login__social">
-					<p>Inicie su sesión con su red social preferida</p>
+					<p>Inicie su sesión con su red social preferida.</p>
 					<SocialIcons />
 				</RowColXS12>
 

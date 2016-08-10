@@ -1,6 +1,9 @@
 import Rx from 'rx-dom'
 
-const endpoint = 'https://0qnniuje2b.execute-api.us-east-1.amazonaws.com/dev'
+// social-authentication
+//const endpoint = 'https://0qnniuje2b.execute-api.us-east-1.amazonaws.com/dev'
+// conatel-cmx
+const endpoint = 'https://kvmveb8o06.execute-api.us-east-1.amazonaws.com/dev' 
 
 function ApiConstructor() {
 
@@ -13,8 +16,8 @@ function ApiConstructor() {
 		window.location.href = `${endpoint}/authentication/signin/${provider}`
 	}
 
-	const validateToken = (token, provider) => {
-		const url = `${endpoint}/authentication/authorize-client/${token}?provider=${provider}`
+	const getProfile = (token, provider) => {
+		const url = `${endpoint}/authentication/profile/${token}?provider=${provider}`
 		return Rx.DOM
 			.getJSON(url)
 			.do((response) => {
@@ -25,7 +28,7 @@ function ApiConstructor() {
 
 	return Object.freeze({
 		signIn,
-		validateToken,
+		getProfile,
 	})
 
 }

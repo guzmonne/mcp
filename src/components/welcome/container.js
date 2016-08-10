@@ -3,14 +3,20 @@ import RowColXS12 from '../bootstrap/row.col-xs-12.js'
 import SocialIcons from '../helpers/social-icons.js'
 import Logo from '../helpers/logo.helper.js'
 
-const WelcomeContainer = () =>
+const WelcomeContainer = ({profile}) =>
 	<div className="Welcome">
 		<RowColXS12 className="text-center">
 			<Logo logo="tata" className="Login__logo"/>
 		</RowColXS12>
 
-		<RowColXS12 className="Login__social">
+		<RowColXS12>
 			<h3>Bienvenido</h3>
+			<img 
+				src={profile.picture}
+				alt={`${profile.name} picture`}
+				className="img-circle Welcome__profile-picture"
+			/>
+			<h4>{profile.name}</h4>
 		</RowColXS12>
 
 		<RowColXS12>

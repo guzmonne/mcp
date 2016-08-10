@@ -16,7 +16,7 @@ function LocalStorageConstructor(){
 		() => localStorage[key]
 	)
 
-	const setKey = (key) => checkLocalStorageAndRun(
+	const setKey = (key, value) => checkLocalStorageAndRun(
 		() => _localStorage[key] = value,
 		() => localStorage[key] = value
 	)
